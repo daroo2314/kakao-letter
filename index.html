@@ -51,10 +51,10 @@
 <body>
 <div class="container">
   <!-- 제목은 한 번만 표시 -->
-  <div class="title">DAROO Webzine By. daroo</div>
+  <div class="title">DAROO WEBZINE By. daroo</div>
   
   <!-- 썸네일 미리보기 -->
-  <img src="https://img1.daumcdn.net/thumb/R300x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FdNsJmt%2FbtsMVFIkyVJ%2Fv5Mg4lnclKTRzSrJrkuWek%2Fimg.png" alt="뉴스레터">
+  <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcnoXOG%2FbtsNbL877e9%2FgkvIYjSbx70KIo4hv4GbgK%2Fimg.png" alt="뉴스레터">
  
   
   <!-- 카카오톡 버튼들 -->
@@ -81,14 +81,14 @@
 
 <script type="text/javascript">
   // 티켓 URL 상수 정의
-  const TICKET_URL_27 = 'https://daroo2314.github.io/news-letter';
-  const TICKET_URL_28 = 'https://daroo2314.github.io/news-letter/';
+  const TICKET_URL_27 = 'https://daroo2314.github.io/webzine-1st/';
+  const TICKET_URL_28 = 'https://daroo2314.github.io/webzine-1st/';
   
   // 이미지 URL - 명시적으로 500x800 크기 지정
-  const IMAGE_URL = 'https://img1.daumcdn.net/thumb/R500x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcBYex9%2FbtsMVTUr2Pn%2FhOJWab7tersTUyKTChcNn0%2Fimg.png';
+  const IMAGE_URL = 'https://img1.daumcdn.net/thumb/R500x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcnoXOG%2FbtsNbL877e9%2FgkvIYjSbx70KIo4hv4GbgK%2Fimg.png';
   
   // 템플릿 ID
-  const TEMPLATE_ID = 118708;
+  const TEMPLATE_ID = 119434;
   
   // 에러 표시 함수
   function showError(message) {
@@ -119,7 +119,7 @@
       }
       
       // 초기화
-      Kakao.init('5de9940787f0cae615e5c63631ecb006');
+      Kakao.init('be4ba979f32659377e6af6148254e32d');
       kakaoInitialized = Kakao.isInitialized();
       
       if (!kakaoInitialized) {
@@ -142,8 +142,8 @@
       Kakao.Share.sendDefault({
         objectType: 'feed',
         content: {
-          title: "DAROO Webzine",
-          description: 'March 2025',
+          title: "1st DAROO WEBZINE",
+          description: 'APRIL 2025',
           imageUrl: IMAGE_URL,
           imageWidth: 500,
           imageHeight: 800,
@@ -154,14 +154,14 @@
         },
         buttons: [
           {
-            title: '영어(En)',
+            title: 'VIEW',
             link: {
               mobileWebUrl: TICKET_URL_27,
               webUrl: TICKET_URL_27
             }
           },
           {
-            title: '한국어(Kor)',
+            title: 'VISIT',
             link: {
               mobileWebUrl: TICKET_URL_28,
               webUrl: TICKET_URL_28
@@ -182,8 +182,8 @@
       Kakao.Share.sendCustom({
         templateId: TEMPLATE_ID,
         templateArgs: {
-          'title': "DAROO Webzine",
-          'description': 'March 2025',
+          'title': "1st DAROO WEBZINE",
+          'description': 'APRIL 2025',
           'imageUrl': IMAGE_URL,
           'ticket_url_27': TICKET_URL_27,
           'ticket_url_28': TICKET_URL_28
